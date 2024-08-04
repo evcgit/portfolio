@@ -8,10 +8,12 @@ function App() {
 
   return (
     <>
+		<div className='min-h-screen bg-background'>
 			<About />
 			<Projects />
 			<Experience />
 			<Contact />
+		</div>
     </>
   )
 }
