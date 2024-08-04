@@ -1,3 +1,23 @@
+const navLinks = [
+  {
+    id: "hero",
+    title: "Hero",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+
 const experiences = [
 	{
 			title: "Full Stack Developer",
@@ -25,4 +45,4 @@ const experiences = [
 	}
 ];
 
-export { experiences };
+export { experiences, navLinks };
