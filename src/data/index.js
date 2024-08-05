@@ -1,7 +1,15 @@
+import budget from "../assets/budget.png";
+import list from "../assets/list.png";
+import student from "../assets/student.png";
+
 const navLinks = [
+	{
+			id: "hero",
+			title: "Hero",
+	},
   {
-    id: "hero",
-    title: "Hero",
+    id: "about",
+    title: "About",
   },
   {
     id: "projects",
@@ -22,7 +30,7 @@ const experiences = [
 	{
 			title: "Full Stack Developer",
 			company: "RAE",
-			date: "Jul 2024 - Present", 
+			date: "Jul 2024 - Current", 
 			description: "Maintained and updated web applications using <span style='color: white;'>Python/Django</span> for backend services and <span style='color: white;'>JavaScript/React</span> for front-end interfaces.<br/><br/>Built responsive and user-friendly web interfaces using React, incorporating state management and <span style='color: white;'>component-based architecture.</span>.<br/><br/>Troubleshot and resolved technical issues, <span style='color: white;'>improving application stability and user experience.</span>.",
 	},
 	{
@@ -45,4 +53,25 @@ const experiences = [
 	}
 ];
 
-export { experiences, navLinks };
+const projects = [
+  {
+    name: "Student Registration",
+    description:
+      "Demo web app for student registration, built with React/Tailwind and Express/Postgres.",
+    image: student,
+  },
+  {
+    name: "Budget Tracker",
+    description:
+      "Front-end project built with React and Tailwind CSS, allowing users to track expenses.",
+    image: budget,
+  },
+  {
+    name: "To-Do List",
+    description:
+      "Front-end project built with React and Tailwind CSS, allowing users to create and manage tasks.",
+    image: list,
+  },
+];
+
+export { experiences, navLinks, projects };

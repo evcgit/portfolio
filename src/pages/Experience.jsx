@@ -1,33 +1,56 @@
-import React, { useState } from "react";
-import ExperienceItem from "../components/ExperienceItem";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { experiences } from "../data";
-import DOMPurify from 'dompurify';
+import SectionWrapper from "../components/SectionWrapper";
+import { styles } from "../components/Motion";
+import { textVariant } from "../components/Motion";
+import ExperienceItem from "../components/ExperienceItem";
+import ExperienceDetails from "../components/ExperienceDetails";
 
 const Experience = () => {
-    const [selectedExperience, setSelectedExperience] = useState(experiences[0]);
+  const [selectedExperience, setSelectedExperience] = useState(experiences[0]);
+  const [isMobile, setIsMobile] = useState(false);
 
-    return (
-        <div className="flex flex-col justify-center p-4 bg-background min-h-screen">
-            <h1 className="text-4xl md:text-8xl font-bold mb-12 md:mb-24 text-white text-center">Experience</h1>
-            <div className="flex flex-col md:flex-row p-4 md:p-8 justify-around items-center space-y-4 md:space-y-0 md:space-x-8">
-                <div className="w-full md:w-fit space-y-4">
-                    {experiences.map((exp, index) => (
-                        <ExperienceItem
-                            key={index}
-                            title={exp.title}
-                            company={exp.company}
-                            date={exp.date}
-                            onClick={() => setSelectedExperience(exp)}
-                            selected={selectedExperience === exp}
-                        />
-                    ))}
-                </div>
-                <div className="w-full md:w-1/3 p-4 mb-8 font-bold text-lg md:text-xl border-4 md:border-8 rounded-2xl text-text h-96">
-                    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(selectedExperience.description) }} />
-                </div>
-            </div>
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    handleResize(); // Check initial screen size
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <div className="sm:my-20 min-h-screen bg-background">
+      <motion.div variants={textVariant()}>
+        <h2 className={`${styles.sectionText} text-center`}>Experience</h2>
+      </motion.div>
+
+      <div className="relative mt-10 md:mt-20 md:p-20 flex flex-col items-center sm:flex-row sm:items-start">
+        <div className="flex flex-col z-10 sm:w-auto sm:w-full">
+          {experiences.map((experience, index) => (
+            <ExperienceItem
+              key={`experience-${index}`}
+              title={experience.title}
+              company={experience.company}
+              date={experience.date}
+              onClick={() => setSelectedExperience(experience)}
+              selected={selectedExperience === experience}
+              isMobile={isMobile}
+            />
+          ))}
         </div>
-    );
+
+        <div className="flex justify-end z-10 sm:block hidden">
+          <ExperienceDetails description={selectedExperience.description} />
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default Experience;
+export default SectionWrapper(Experience, "experience");
