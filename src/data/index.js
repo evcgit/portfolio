@@ -3,10 +3,6 @@ import list from "../assets/list.png";
 import student from "../assets/student.png";
 
 const navLinks = [
-	{
-			id: "hero",
-			title: "Hero",
-	},
   {
     id: "about",
     title: "About",
