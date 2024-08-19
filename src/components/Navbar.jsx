@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
+import githubIcon from "../assets/github.svg";
+import linkedinIcon from "../assets/linkedin.svg";
+import gmailIcon from "../assets/gmail.svg";
 import { navLinks } from "../data";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
   const [active, setActive] = useState("hero");
@@ -40,11 +45,16 @@ const Navbar = () => {
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
+  const handleEmailCopy = () => {
+    navigator.clipboard.writeText("evanvcortez@example.com");
+    toast.success("Email address copied to clipboard!");
+  };
+
   return (
     <nav
-      className="w-full flex items-center bg-gradient-to-b from-black sm:bg-none p-8 sm:px-16 sm:py-10 fixed z-40 pointer-events-none"
+      className="w-full flex items-center bg-gradient-to-b from-black sm:bg-none p-8 sm:px-16 sm:py-10 fixed z-40"
     >
-      <div className='w-full flex justify-between items-start mx-auto'>
+      <div className='w-full flex justify-between items-start mx-auto relative'>
         <Link
           to='/'
           className='flex items-start'
@@ -57,6 +67,19 @@ const Navbar = () => {
             EC
           </p>
         </Link>
+
+        {/* Icons Container */}
+        <div className='absolute left-0 top-20 flex flex-col items-start gap-4'>
+          <a href='https://github.com/evcgit' target='_blank' rel='noopener noreferrer'>
+            <img src={githubIcon} alt='GitHub' className='w-6 h-6 object-contain cursor-pointer' />
+          </a>
+          <a href='https://www.linkedin.com/in/evan-cortez-bb52a9240/' target='_blank' rel='noopener noreferrer'>
+            <img src={linkedinIcon} alt='LinkedIn' className='w-6 h-6 object-contain cursor-pointer' />
+          </a>
+          <button onClick={handleEmailCopy}>
+            <img src={gmailIcon} alt='Gmail' className='w-6 h-6 object-contain cursor-pointer' />
+          </button>
+        </div>
 
         <ul className='list-none hidden sm:flex flex-col gap-5'>
           {navLinks.map((nav) => (
@@ -107,6 +130,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <ToastContainer position="bottom-left" />
     </nav>
   );
 };

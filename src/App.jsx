@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
-import Contact from './pages/Contact';
 
 const App = () => {
   const wrapperRef = useRef(null);
@@ -22,9 +21,6 @@ const App = () => {
           </div>
           <div id="experience" className='relative z-30 bg-primary'>
             <Experience />
-          </div>
-          <div id="contact" className='relative z-30 bg-primary'>
-            <Contact />
           </div>
         </div>
       </div>

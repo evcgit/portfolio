@@ -1,5 +1,5 @@
 import budget from "../assets/budget.png";
-import list from "../assets/list.png";
+import AI from "../assets/AI.jpg";
 import student from "../assets/student.png";
 
 const navLinks = [
@@ -14,11 +14,7 @@ const navLinks = [
   {
     id: "experience",
     title: "Experience",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  }
 ];
 
 
@@ -30,16 +26,16 @@ const experiences = [
 			description: "Maintained and updated web applications using <span style='color: white;'>Python/Django</span> for backend services and <span style='color: white;'>JavaScript/React</span> for front-end interfaces.<br/><br/>Built responsive and user-friendly web interfaces using React, incorporating state management and <span style='color: white;'>component-based architecture.</span>.<br/><br/>Troubleshot and resolved technical issues, <span style='color: white;'>improving application stability and user experience.</span>",
 	},
 	{
+		title: "Project Manager",
+		company: "RAE",
+		date: "Feb 2024 - Current",
+		description: "Served as a Project Manager, reviewing attic photos of homes to assess structural suitability for solar panel installation.<br/><br/>Demonstrated strong multitasking abilities and problem-solving skills to evaluate multiple projects simultaneously.<br/><br/>Ensured accurate assessments to facilitate the installation process and <span style='color: white;'>enhance operational efficiency</span>.<br/><br/>Collaborated with cross-functional teams to address structural challenges and <span style='color: white;'>optimize project outcomes.</span>"
+	},	
+	{
 			title: "Web Developer",
 			company: "MTECH",
-			date: "Jan 2024 - Current",
+			date: "Jan 2024 - Aug 2024",
 			description: "Completed the Mountainland Technical College Web Developer program, gaining proficiency in <span style='color: white;'>HTML, CSS, JavaScript</span> for front-end development and <span style='color: white;'>SQL, Express.js</span> for backend services.<br/><br/>Implemented responsive web design principles, ensuring optimal performance across various devices and <span style='color: white;'>enhanced user experience.</span><br/><br/>Collaborated on projects, honing skills in <span style='color: white;'>version control and team-based development.</span>"
-	},
-	{
-			title: "Project Manager",
-			company: "RAE",
-			date: "Feb 2024 - Current",
-			description: "Served as a Project Manager, reviewing attic photos of homes to assess structural suitability for solar panel installation.<br/><br/>Demonstrated strong multitasking abilities and problem-solving skills to evaluate multiple projects simultaneously.<br/><br/>Ensured accurate assessments to facilitate the installation process and <span style='color: white;'>enhance operational efficiency</span>.<br/><br/>Collaborated with cross-functional teams to address structural challenges and <span style='color: white;'>optimize project outcomes.</span>"
 	},
 	{
 			title: "Market Manager",
@@ -53,7 +49,7 @@ const projects = [
   {
     name: "Student Registration",
     description:
-      "Demo web app for student registration, built with React/Tailwind and Express/Postgres.",
+      "Simple CRUD app for student registration, built with React/Tailwind and NodeJS/Postgres.",
     image: student,
   },
   {
@@ -63,10 +59,10 @@ const projects = [
     image: budget,
   },
   {
-    name: "To-Do List",
+    name: "Object Detection",
     description:
-      "Front-end project built with React and Tailwind CSS, allowing users to create and manage tasks.",
-    image: list,
+      "AI tool for object detection in attic space photos to enhance workflow at RAE, built with Python. (In Progress)",
+    image: AI,
   },
 ];
 

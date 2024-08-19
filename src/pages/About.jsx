@@ -3,7 +3,7 @@ import profile from "../assets/profile.jpg";
 
 const About = () => {
 	return (
-		<div className="bg-background text-white flex flex-col items-center py-16 px-4 md:px-8 lg:px-16">
+		<div className="bg-background text-white flex flex-col items-center py-32 px-4 md:px-8 lg:px-16">
 			<div className="flex flex-col md:flex-row items-center gap-32 max-w-4xl w-full">
 				<div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
 					<img
