@@ -1,6 +1,7 @@
 import budget from "../assets/budget.png";
 import AI from "../assets/AI.jpg";
 import student from "../assets/student.png";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
@@ -34,7 +35,7 @@ const experiences = [
 	{
 			title: "Web Developer",
 			company: "MTECH",
-			date: "Jan 2024 - Aug 2024",
+			date: "Jan 2024 - Oct 2024",
 			description: "Completed the Mountainland Technical College Web Developer program, gaining proficiency in <span style='color: white;'>HTML, CSS, JavaScript</span> for front-end development and <span style='color: white;'>SQL, Express.js</span> for backend services.<br/><br/>Implemented responsive web design principles, ensuring optimal performance across various devices and <span style='color: white;'>enhanced user experience.</span><br/><br/>Collaborated on projects, honing skills in <span style='color: white;'>version control and team-based development.</span>"
 	},
 	{
@@ -49,14 +50,16 @@ const projects = [
   {
     name: "Student Registration",
     description:
-      "Simple CRUD app for student registration, built with React/Tailwind and NodeJS/Postgres.",
+      "Simple CRUD app for student registration, built with React/Tailwind and NodeJS/Postgres.<br /> Login: user/1 || a/1",
     image: student,
+		link: "https://mtechcapstone.onrender.com/"
   },
   {
     name: "Budget Tracker",
     description:
-      "Front-end project built with React and Tailwind CSS, allowing users to track expenses.",
+      "Contributed to the development of this React and Tailwind CSS-based front-end project, designed to help users effectively track and manage expenses.",
     image: budget,
+		link: "https://react-project-one-indol.vercel.app/"
   },
   {
     name: "Object Detection",
