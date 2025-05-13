@@ -15,10 +15,7 @@ const About = () => {
 				<div className="w-full md:w-1/2 text-center md:text-left">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">Evan Cortez</h2>
 					<p className="text-lg leading-relaxed">
-						Welcome to my portfolio! I'm a passionate web developer with experience in
-						creating dynamic and responsive web applications. I enjoy solving problems and
-						exploring new technologies. My goal is to build impactful solutions and
-						continuously grow as a developer.
+						Welcome to my bio!
 					</p>
 				</div>
 			</div>
