@@ -44,7 +44,7 @@ const Experience = () => {
           ))}
         </div>
 
-        <div className="flex justify-end z-10 sm:block hidden">
+        <div className="flex justify-end z-10">
           <ExperienceDetails description={selectedExperience.description} image={selectedExperience.image} />
         </div>
       </div>

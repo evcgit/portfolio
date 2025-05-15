@@ -28,22 +28,33 @@ const Navbar = () => {
 		const sections = document.querySelectorAll("div[id]");
 		const observer = new IntersectionObserver(
 			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						setActive(entry.target.id);
+				// Find the section that is most visible
+				const visibleSection = entries.reduce((max, entry) => {
+					return (entry.intersectionRatio > (max?.intersectionRatio || 0))
+						? entry
+						: max;
+				}, null);
+
+				if (visibleSection?.isIntersecting && visibleSection.intersectionRatio > 0.5) {
+					const newActive = visibleSection.target.id;
+					if (newActive !== active) {
+						setActive(newActive);
 					}
-				});
+				}
 			},
 			{
-				threshold: 0.3,
-				rootMargin: '-50% 0px -50% 0px'
+				threshold: 0.5,
+				rootMargin: '0px'
 			}
 		);
 
 		sections.forEach((section) => observer.observe(section));
 
-		return () => sections.forEach((section) => observer.unobserve(section));
-	}, []);
+		return () => {
+			sections.forEach((section) => observer.unobserve(section));
+			observer.disconnect();
+		};
+	}, [active]);
 
 	const handleEmailCopy = () => {
 		navigator.clipboard.writeText("evanvcortez@example.com");
@@ -101,14 +112,14 @@ const Navbar = () => {
 
 					<div
 						className={`${!toggle ? "hidden" : "flex"
-							} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-30 rounded-xl`}
+							} p-3 absolute top-16 right-0 mx-2 my-1 min-w-[120px] z-30 rounded-xl bg-black/80 backdrop-blur-sm`}
 					>
-						<ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+						<ul className='list-none flex justify-end items-start flex-1 flex-col gap-2'>
 							{navLinks.map((nav) => (
 								<li
 									key={nav.id}
-									className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.id ? "text-quaternary" : "text-secondary"
-										}`}
+									className={`font-poppins font-medium cursor-pointer text-[14px] ${active === nav.id ? "text-white" : "text-slate-400"
+										} hover:text-white transition-colors px-2 py-1 w-full text-right`}
 									onClick={() => {
 										setToggle(!toggle);
 										setActive(nav.id);
