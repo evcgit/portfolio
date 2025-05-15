@@ -6,6 +6,8 @@ import dogpic from "../assets/dogpic.jpg";
 import pimp from "../assets/pimp.jpg";
 import familypic from "../assets/familypic.jpg";
 import globe from "../assets/globe.jpeg";
+import book from "../assets/book.jpg";
+
 
 const navLinks = [
 	{
@@ -74,6 +76,11 @@ const experiences = [
 		title: "Fun Fact",
 		description: "My style was better was I was younger",
 		image: pimp
+	},
+	{
+		title: "Composition as a Writer",
+		description: "I'd say I'm more of a realist than an idealist. I prefer to write my actual thoughts rather than worry about what others think or how the story ends.",
+		image: book
 	}
 ]
 

@@ -13,7 +13,10 @@ const About = () => {
 					/>
 				</div>
 				<div className="w-full md:w-1/2 text-center md:text-left">
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">Evan Cortez</h2>
+					<h1 className="text-6xl md:text-4xl font-bold mb-3">Evan Cortez</h1>
+					<h5 className="text-lg leading-relaxed">
+						Information Systems BS
+					</h5>
 					<p className="text-lg leading-relaxed">
 						Welcome to my bio!
 					</p>
