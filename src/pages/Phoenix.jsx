@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { projects, phoenix } from "../data";
+import { phoenix } from "../data";
 import SectionWrapper from "../components/SectionWrapper";
 import { styles } from "../components/Motion";
 import { fadeIn, textVariant } from "../components/Motion";
@@ -65,21 +65,16 @@ const ProjectCard = ({
 
 
 
-const Projects = () => {
+const Phoenix = () => {
 
   return (
     <div className="text-center md:text-left md:px-20 lg:px-40 bg-background min-h-screen">
-      <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionText}`}>Family</h2>
-      </motion.div>
-
       <div className="mt-10 md:mt-20 flex flex-col gap-10 md:gap-20">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+          <ProjectCard key={`project-${4}`} index={4} {...phoenix} />
+
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Projects, "family");
+export default SectionWrapper(Phoenix, "doggo");

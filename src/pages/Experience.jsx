@@ -27,7 +27,7 @@ const Experience = () => {
   return (
     <div className="sm:my-20 min-h-screen bg-background">
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionText} text-center`}>Experience</h2>
+        <h2 className={`${styles.sectionText} text-center`}>Me</h2>
       </motion.div>
 
       <div className="relative mt-10 md:mt-20 md:p-20 flex flex-col items-center sm:flex-row sm:items-start">
@@ -36,8 +36,7 @@ const Experience = () => {
             <ExperienceItem
               key={`experience-${index}`}
               title={experience.title}
-              company={experience.company}
-              date={experience.date}
+              description={experience.description}
               onClick={() => setSelectedExperience(experience)}
               selected={selectedExperience === experience}
               isMobile={isMobile}
@@ -46,11 +45,11 @@ const Experience = () => {
         </div>
 
         <div className="flex justify-end z-10 sm:block hidden">
-          <ExperienceDetails description={selectedExperience.description} />
+          <ExperienceDetails description={selectedExperience.description} image={selectedExperience.image} />
         </div>
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Experience, "experience");
+export default SectionWrapper(Experience, "me");

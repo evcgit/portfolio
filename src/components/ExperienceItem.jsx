@@ -3,11 +3,9 @@ import clsx from 'clsx';
 
 const ExperienceItem = ({
 	title,
-	company,
-	date,
 	onClick,
 	selected,
-	isMobile,
+	isMobile
 }) => {
 	return (
 		<div
@@ -27,17 +25,6 @@ const ExperienceItem = ({
 			>
 				{title}
 			</h3>
-			<p
-				className={clsx(
-					'text-md lg:text-lg xl:text-2xl sm:font-medium pt-2 sm:pl-8',
-					{
-						'text-white': selected || isMobile,
-						'text-slate-600': !selected && !isMobile,
-					}
-				)}
-			>
-				{company} | {date}
-			</p>
 		</div>
 	);
 };
