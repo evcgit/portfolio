@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evan Cortez — Resume</title>
+    <style>
+      @page {
+        size: Letter;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #18181b;
+        font-size: 9.4pt;
+        line-height: 1.32;
+        padding: 0.48in 0.58in;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      h1 {
+        font-size: 20pt;
+        font-weight: 650;
+        letter-spacing: -0.03em;
+        line-height: 1.05;
+      }
+
+      .subtitle {
+        margin-top: 2px;
+        font-size: 9.75pt;
+        color: #3f3f46;
+        font-weight: 500;
+      }
+
+      .contact {
+        margin-top: 6px;
+        font-size: 8.1pt;
+        color: #52525b;
+      }
+
+      .contact a {
+        color: #52525b;
+        text-decoration: none;
+      }
+
+      .sep {
+        margin: 0 5px;
+        color: #d4d4d8;
+      }
+
+      section {
+        margin-top: 11px;
+      }
+
+      h2 {
+        font-size: 8pt;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #09090b;
+        border-bottom: 1px solid #e4e4e7;
+        padding-bottom: 2px;
+        margin-bottom: 6px;
+      }
+
+      .summary {
+        color: #27272a;
+        font-size: 9.15pt;
+        line-height: 1.38;
+      }
+
+      .role-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .role-title {
+        font-weight: 650;
+        font-size: 9.75pt;
+      }
+
+      .role-meta {
+        font-size: 8.1pt;
+        color: #52525b;
+        white-space: nowrap;
+      }
+
+      .role-org {
+        margin-top: 1px;
+        font-size: 8.75pt;
+        color: #3f3f46;
+      }
+
+      .role-org a {
+        color: #3f3f46;
+        text-decoration: none;
+      }
+
+      .stack {
+        margin-top: 1px;
+        font-size: 7.75pt;
+        color: #71717a;
+      }
+
+      ul {
+        margin-top: 3px;
+        padding-left: 13px;
+      }
+
+      li {
+        margin-bottom: 1.5px;
+      }
+
+      li::marker {
+        color: #a1a1aa;
+      }
+
+      .job + .job {
+        margin-top: 8px;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: 78px 1fr;
+        gap: 1.5px 8px;
+        font-size: 8.75pt;
+      }
+
+      .skills dt {
+        font-weight: 650;
+        color: #3f3f46;
+      }
+
+      .skills dd {
+        color: #27272a;
+      }
+
+      .edu-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 2px;
+        font-size: 8.75pt;
+      }
+
+      .edu-row strong {
+        font-weight: 650;
+      }
+
+      .edu-row span {
+        color: #52525b;
+        font-size: 8.1pt;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Evan Cortez</h1>
+      <p class="subtitle">Software Engineer &amp; Product Builder</p>
+      <p class="contact">
+        Provo, UT
+        <span class="sep">·</span>
+        <a href="tel:+13853097718">(385) 309-7718</a>
+        <span class="sep">·</span>
+        <a href="mailto:evanvcortez@gmail.com">evanvcortez@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="https://evancortez.me">evancortez.me</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/evcgit">github.com/evcgit</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/evan-cortez-bb52a9240"
+          >linkedin.com/in/evan-cortez-bb52a9240</a
+        >
+      </p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">
+        Software engineer who designs and ships products around real business
+        workflows. Owns systems end-to-end—from clarifying operational problems
+        to production SaaS with payments, multi-tenant architecture, and
+        measurable outcomes in efficiency, performance, and reliability. Uses AI
+        tooling deliberately across design, implementation, and review to move
+        faster without sacrificing correctness or ownership.
+      </p>
+    </section>
+
+    <section>
+      <h2>Product</h2>
+      <div class="job">
+        <div class="role-head">
+          <div class="role-title">BidzBase — Founder / Builder</div>
+          <div class="role-meta">2025 – Present</div>
+        </div>
+        <div class="role-org">
+          Production multi-tenant SaaS for subcontractors ·
+          <a href="https://bidzbase.com">bidzbase.com</a>
+        </div>
+        <div class="stack">
+          React · Django · PostgreSQL · Redis · Stripe Billing + Connect ·
+          SendGrid · Docker · AWS
+        </div>
+        <ul>
+          <li>
+            Built and launched a live SaaS covering estimate → proposal →
+            accept/decline → invoice → get paid, plus scheduling, time tracking,
+            analytics, roles, PDFs, and email automation
+          </li>
+          <li>
+            Shipped from initial idea to production with real users in roughly
+            one month; continues iterating from live usage
+          </li>
+          <li>
+            Designed multi-tenant architecture with Stripe subscriptions, Stripe
+            Connect, Docker deployment, and AWS infrastructure
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="role-head">
+          <div class="role-title">Software Engineer</div>
+          <div class="role-meta">Aug 2024 – Present</div>
+        </div>
+        <div class="role-org">Right Angle Engineering</div>
+        <div class="stack">
+          React · TypeScript · Django · PostgreSQL / MySQL · AWS · Docker · AWS
+          CDK
+        </div>
+        <ul>
+          <li>
+            Automated ~60% of a revenue-critical workflow, enabling support for
+            significantly larger clients without proportional overhead
+          </li>
+          <li>
+            Reduced API traffic by ~66% and application load times by ~70%
+            through architectural improvements
+          </li>
+          <li>
+            Introduced Docker and AWS CDK for rolling deployments supporting
+            ~99.99% uptime
+          </li>
+          <li>
+            Built internal analytics and a configurable checklist platform that
+            improved QA and operational visibility
+          </li>
+          <li>
+            Implemented automated payment workflows that accelerated collections
+            and cleared substantial overdue receivables
+          </li>
+          <li>
+            Led backend refactors toward service-layer architecture; shipped
+            full-stack React/Django features with GitHub Actions CI
+          </li>
+          <li>
+            Applied AI-assisted development across research, scaffolding, and
+            code review while retaining design decisions, testing, and
+            production accountability
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="role-head">
+          <div class="role-title">Project Manager → Software Engineer</div>
+          <div class="role-meta">Feb 2024 – Aug 2024</div>
+        </div>
+        <div class="role-org">Right Angle Engineering</div>
+        <ul>
+          <li>
+            Promoted into engineering after independently building internal
+            full-stack tools that improved team workflows
+          </li>
+          <li>
+            Coordinated planning-to-delivery with emphasis on reliable shipping
+            and practical tooling
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="role-head">
+          <div class="role-title">Market Manager</div>
+          <div class="role-meta">Jun 2022 – Oct 2023</div>
+        </div>
+        <div class="role-org">Solcius</div>
+        <ul>
+          <li>
+            Managed 200+ residential solar installations; led a 10-person
+            operations team through compliance, delivery, and client outcomes
+          </li>
+          <li>
+            Improved internal processes by ~30%, grounding later engineering work
+            in real operational constraints
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Frontend</dt>
+        <dd>React, TypeScript, Next.js, CSS</dd>
+        <dt>Backend</dt>
+        <dd>Python, Django, Django REST Framework, Node.js</dd>
+        <dt>Data</dt>
+        <dd>PostgreSQL, MySQL, Redis</dd>
+        <dt>Cloud / Infra</dt>
+        <dd>AWS, Docker, AWS CDK, Nginx, GitHub Actions</dd>
+        <dt>Payments</dt>
+        <dd>Stripe Billing, Stripe Connect</dd>
+        <dt>AI Tooling</dt>
+        <dd>
+          Cursor, Claude, ChatGPT — used across architecture, implementation,
+          debugging, and review
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-row">
+        <div>
+          <strong>Mountainland Technical College</strong> — Web Development
+          Certificate
+        </div>
+        <span>Completed 2024</span>
+      </div>
+      <div class="edu-row">
+        <div>
+          <strong>Utah Valley University</strong> — Information Systems
+          coursework
+        </div>
+        <span>In progress</span>
+      </div>
+    </section>
+  </body>
+</html>
