@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://evancortez.me",
   email: "evanvcortez@gmail.com",
   github: "https://github.com/evcgit",
-  linkedin: "https://www.linkedin.com/in/evan-cortez-bb52a9240",
+  linkedin: "https://www.linkedin.com/in/evan-cortez",
   resume: "/resume.pdf",
   bidzbase: "https://bidzbase.com",
   demo: "https://bidzbase.com/login?demo=1",
