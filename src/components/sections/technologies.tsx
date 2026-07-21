@@ -8,7 +8,7 @@ export function Technologies() {
     <Section
       eyebrow="Technologies"
       title="Tools used to ship."
-      description="Categories that backed BidzBase and production systems—not a skill meter."
+      description="Stack behind BidzBase and the production ops platform—not a skill meter."
     >
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {Object.entries(technologies).map(([category, items], i) => (

@@ -166,7 +166,9 @@
   <body>
     <header>
       <h1>Evan Cortez</h1>
-      <p class="subtitle">Software Engineer &amp; Product Builder</p>
+      <p class="subtitle">
+        Full-Stack Engineer — Frontend &amp; DevOps Owner · Product Builder
+      </p>
       <p class="contact">
         Provo, UT
         <span class="sep">·</span>
@@ -187,12 +189,12 @@
     <section>
       <h2>Summary</h2>
       <p class="summary">
-        Software engineer who designs and ships products around real business
-        workflows. Owns systems end-to-end—from clarifying operational problems
-        to production SaaS with payments, multi-tenant architecture, and
-        measurable outcomes in efficiency, performance, and reliability. Uses AI
-        tooling deliberately across design, implementation, and review to move
-        faster without sacrificing correctness or ownership.
+        Full-stack engineer who owns frontend and deploy paths end-to-end on a
+        small eng team. Ships revenue systems (Stripe Autopay), large-client
+        portal integrations, and ops tooling that unlocks remote labor—plus
+        production SaaS with multi-tenant architecture and payments. Measures
+        success in cash collected, ops hours saved, and systems people rely on
+        every day.
       </p>
     </section>
 
@@ -234,43 +236,48 @@
 
       <div class="job">
         <div class="role-head">
-          <div class="role-title">Software Engineer</div>
-          <div class="role-meta">Aug 2024 – Present</div>
+          <div class="role-title">
+            Software Engineer — Frontend &amp; DevOps Owner
+          </div>
+          <div class="role-meta">Jul 2024 – Present</div>
         </div>
-        <div class="role-org">Right Angle Engineering</div>
+        <div class="role-org">
+          Right Angle Engineering · Primary frontend committer; sole DevOps
+          owner
+        </div>
         <div class="stack">
-          React · TypeScript · Django · PostgreSQL / MySQL · AWS · Docker · AWS
-          CDK
+          React · TypeScript · React Query · Django · MySQL · Stripe · Puppeteer
+          · AWS CDK · ECS · Docker
         </div>
         <ul>
           <li>
-            Automated ~60% of a revenue-critical workflow, enabling support for
-            significantly larger clients without proportional overhead
+            Built Stripe charge-on-approval (Autopay) so jobs bill when
+            approved—recovering revenue that previously leaked through unpaid
+            invoices; settlement crons and failed-payment alerts
           </li>
           <li>
-            Reduced API traffic by ~66% and application load times by ~70%
-            through architectural improvements
+            Owned client-portal scrapers that create/update work via internal
+            APIs, cutting intake ops time roughly in half and enabling large
+            partners without proportional headcount
           </li>
           <li>
-            Introduced Docker and AWS CDK for rolling deployments supporting
-            ~99.99% uptime
+            Solo-built in-app PE stamping, packet customization, and digital
+            signing—unlocking remote and overseas labor by removing the
+            wet-stamp office bottleneck
           </li>
           <li>
-            Built internal analytics and a configurable checklist platform that
-            improved QA and operational visibility
+            Led per-company pricing catalogs and custom bid tooling so sales
+            could express real commercial terms during an engineering-services
+            pivot
           </li>
           <li>
-            Implemented automated payment workflows that accelerated collections
-            and cleared substantial overdue receivables
+            Cut API traffic ~66% and made the heaviest job pages ~3× faster via
+            request architecture, pagination, and serializer cleanup
           </li>
           <li>
-            Led backend refactors toward service-layer architecture; shipped
-            full-stack React/Django features with GitHub Actions CI
-          </li>
-          <li>
-            Applied AI-assisted development across research, scaffolding, and
-            code review while retaining design decisions, testing, and
-            production accountability
+            Solo permissions refactor across company, user, job, checklist, and
+            accounting; sole owner of ECS/ALB migration for zero-downtime
+            deploys
           </li>
         </ul>
       </div>
@@ -278,7 +285,7 @@
       <div class="job">
         <div class="role-head">
           <div class="role-title">Project Manager → Software Engineer</div>
-          <div class="role-meta">Feb 2024 – Aug 2024</div>
+          <div class="role-meta">Feb 2024 – Jul 2024</div>
         </div>
         <div class="role-org">Right Angle Engineering</div>
         <ul>
@@ -287,8 +294,8 @@
             full-stack tools that improved team workflows
           </li>
           <li>
-            Coordinated planning-to-delivery with emphasis on reliable shipping
-            and practical tooling
+            Coordinated planning-to-delivery on high-volume client intake;
+            later automation work grounded in doing the job firsthand
           </li>
         </ul>
       </div>
@@ -305,8 +312,8 @@
             operations team through compliance, delivery, and client outcomes
           </li>
           <li>
-            Improved internal processes by ~30%, grounding later engineering work
-            in real operational constraints
+            Improved internal processes by ~30%, grounding later engineering
+            work in real operational constraints
           </li>
         </ul>
       </div>
@@ -316,15 +323,17 @@
       <h2>Skills</h2>
       <dl class="skills">
         <dt>Frontend</dt>
-        <dd>React, TypeScript, Next.js, CSS</dd>
+        <dd>React, TypeScript, Next.js, React Query, MUI, CSS</dd>
         <dt>Backend</dt>
-        <dd>Python, Django, Django REST Framework, Node.js</dd>
+        <dd>Python, Django, Django REST Framework, Dramatiq, Node.js</dd>
         <dt>Data</dt>
         <dd>PostgreSQL, MySQL, Redis</dd>
         <dt>Cloud / Infra</dt>
-        <dd>AWS, Docker, AWS CDK, Nginx, GitHub Actions</dd>
+        <dd>AWS (ECS, ALB, EFS, S3), Docker, AWS CDK, Nginx, GitHub Actions</dd>
         <dt>Payments</dt>
-        <dd>Stripe Billing, Stripe Connect</dd>
+        <dd>Stripe Billing, Connect, PaymentIntents, Autopay / webhooks</dd>
+        <dt>Integrations</dt>
+        <dd>Puppeteer scrapers, S3 uploads, client-portal automation</dd>
         <dt>AI Tooling</dt>
         <dd>
           Cursor, Claude, ChatGPT — used across architecture, implementation,

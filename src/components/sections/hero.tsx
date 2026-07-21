@@ -55,10 +55,11 @@ export function Hero() {
           transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
           className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-zinc-400 sm:text-lg"
         >
-          I build software that improves business operations.
-          <br className="hidden sm:block" /> From internal automation platforms
-          to production SaaS products, I enjoy turning complicated workflows
-          into software that people actually want to use.
+          I own frontend and deploy paths end-to-end—and ship products around
+          real business workflows.
+          <br className="hidden sm:block" /> Payments that collect, integrations
+          that cut manual intake, tools that unlock remote labor, and production
+          SaaS people actually use.
         </motion.p>
 
         <motion.div

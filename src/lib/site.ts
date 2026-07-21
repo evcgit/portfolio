@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Evan Cortez",
   title: "Evan Cortez — Software Engineer & Product Builder",
   description:
-    "I build software that improves business operations. From internal automation platforms to production SaaS products, I turn complicated workflows into software people actually use.",
+    "Full-stack engineer who owns frontend and deploy paths end-to-end. Ships revenue systems, client integrations, and ops tooling—plus production SaaS around real business workflows.",
   url: "https://evancortez.me",
   email: "evanvcortez@gmail.com",
   github: "https://github.com/evcgit",
@@ -24,24 +24,28 @@ export const navItems = [
 
 export const impactStats = [
   {
-    value: "60%",
-    label: "Revenue-critical workflow automated",
+    value: "Charge-on-approval",
+    label: "Recovered revenue that previously leaked through unpaid invoices",
+  },
+  {
+    value: "~2×",
+    label: "Ops throughput on large-client intake after portal automation",
+  },
+  {
+    value: "~3×",
+    label: "Faster load on the heaviest job pages",
   },
   {
     value: "66%",
-    label: "Reduction in API requests",
+    label: "Fewer API requests through frontend architecture",
   },
   {
-    value: "70%",
-    label: "Faster application loading",
+    value: "Remote labor",
+    label: "PE stamping & packets unlocked for remote / overseas ops",
   },
   {
-    value: "99.99%",
-    label: "Deployment uptime",
-  },
-  {
-    value: "Production SaaS",
-    label: "Live with real users",
+    value: "Zero-downtime",
+    label: "ECS deploy path replacing brittle one-box releases",
   },
 ] as const;
 
@@ -56,12 +60,12 @@ export const principles = [
   {
     title: "Understand the workflow before writing code",
     description:
-      "I learn how work actually happens—handoffs, exceptions, and bottlenecks—before proposing software.",
+      "I learn how work actually happens—handoffs, exceptions, and bottlenecks—before proposing software. Prior ops experience makes the constraints concrete.",
   },
   {
     title: "Technology should support business goals",
     description:
-      "Stack choices follow the outcome. Reliability, cost, and speed to value matter more than novelty.",
+      "Stack choices follow the outcome: cash collected, labor unlocked, reliability under load—not novelty for its own sake.",
   },
   {
     title: "Prefer simple systems over unnecessary complexity",
@@ -76,7 +80,7 @@ export const principles = [
   {
     title: "Measure outcomes instead of output",
     description:
-      "Fewer requests, faster load times, less manual work, and healthier cash flow—not story points.",
+      "Fewer requests, faster load times, less manual work, and healthier collections—not story points.",
   },
   {
     title: "Build products that solve real problems",
@@ -92,56 +96,65 @@ export const principles = [
 
 export const experience = [
   {
-    title: "Automated a revenue-critical workflow",
+    title: "Turned approvals into collections",
     result:
-      "Automated approximately 60% of a revenue-critical workflow, allowing the business to support significantly larger clients.",
-    detail: "Reduced operational overhead so the team could scale without proportional headcount.",
+      "Built Stripe charge-on-approval so jobs bill when work is approved—recovering revenue that previously leaked through unpaid invoices.",
+    detail:
+      "Card-on-file Autopay, settlement crons, and failed-payment alerts replaced spreadsheet chase.",
   },
   {
-    title: "Cut API traffic at the architecture layer",
+    title: "Automated large-client intake",
     result:
-      "Reduced API traffic by approximately 66% through architectural improvements.",
-    detail: "Fewer calls, less load, and a clearer contract between frontend and backend services.",
+      "Owned client-portal scrapers that create and update work through internal APIs—cutting intake ops time roughly in half.",
+    detail:
+      "Same book of work at higher throughput without proportional headcount; grounded in prior PM experience on those workflows.",
   },
   {
-    title: "Made applications feel instant",
-    result: "Reduced application loading times by roughly 70%.",
-    detail: "Users spend more time working and less time waiting on screens.",
+    title: "Unlocked remote PE labor",
+    result:
+      "Solo-built in-app stamping, packet customization, and digital signing so PE deliverables no longer required an office wet-stamp bottleneck.",
+    detail:
+      "Opened the door to remote and overseas ops labor on a high-frequency production path.",
   },
   {
-    title: "Hardened deployment infrastructure",
+    title: "Made commercial terms first-class",
     result:
-      "Introduced Docker and AWS CDK infrastructure to support rolling deployments and approximately 99.99% uptime.",
-    detail: "Shipping became routine instead of risky.",
+      "Led per-company pricing catalogs and custom bid tooling so sales could express real deals—not prices that only lived in people’s heads.",
+    detail:
+      "Estimate helpers and a standardized bid→accept flow for consistent quoting during an engineering-services pivot.",
   },
   {
-    title: "Brought visibility to operations",
+    title: "Made the hottest screens fast",
     result:
-      "Designed internal analytics systems and introduced new operational metrics that improved quality assurance.",
-    detail: "Teams could spot issues earlier and act with clearer signal.",
+      "Cut API traffic by ~66% and made the heaviest job pages roughly 3× faster through request architecture, pagination, and serializer cleanup.",
+    detail:
+      "Normal jobs feel near-instant; operators spend time working, not waiting.",
+  },
+  {
+    title: "Owned permissions and deploy reliability",
+    result:
+      "Solo permissions refactor across company, user, job, checklist, and accounting surfaces—plus sole ownership of the ECS/ALB migration path.",
+    detail:
+      "Safe multi-role portal use as the org grew; zero-downtime deploys instead of brittle one-box releases.",
   },
   {
     title: "Raised quality control standards",
     result:
-      "Built a configurable checklist platform that significantly improved quality control.",
-    detail: "Consistent checks, less guesswork, better handoffs between stages.",
-  },
-  {
-    title: "Accelerated collections",
-    result:
-      "Implemented automated payment workflows that accelerated collections and eliminated large amounts of overdue receivables.",
-    detail: "Cash moved faster because follow-up stopped depending on memory.",
+      "Built configurable checklist and QC flows that made review consistent across jobs and handoffs.",
+    detail:
+      "Fewer bad billable states before approval; clearer signal for operators and managers.",
   },
 ] as const;
 
 export const technologies = {
-  Frontend: ["React", "TypeScript", "Next.js", "CSS"],
-  Backend: ["Python", "Django", "Django REST Framework", "Node.js"],
-  Cloud: ["AWS", "S3", "Lightsail"],
+  Frontend: ["React", "TypeScript", "Next.js", "React Query", "MUI", "CSS"],
+  Backend: ["Python", "Django", "Django REST Framework", "Dramatiq", "Node.js"],
+  Integrations: ["Puppeteer", "Stripe webhooks", "S3 uploads"],
+  Cloud: ["AWS", "ECS", "ALB", "EFS", "S3", "Secrets Manager"],
   Infrastructure: ["Docker", "AWS CDK", "Nginx"],
   Databases: ["PostgreSQL", "MySQL", "Redis"],
-  DevOps: ["GitHub Actions", "Docker Compose", "CI/CD"],
-  Payments: ["Stripe Billing", "Stripe Connect"],
+  DevOps: ["GitHub Actions", "Docker Compose", "CI/CD", "Release notes"],
+  Payments: ["Stripe Billing", "Stripe Connect", "PaymentIntents", "Autopay"],
 } as const;
 
 export const architectureNodes = [

@@ -8,8 +8,8 @@ export function Impact() {
     <Section
       id="impact"
       eyebrow="Impact"
-      title="Results that matter to the business."
-      description="Measurable improvements in workflow automation, performance, reliability, and collections—not a list of frameworks."
+      title="Outcomes that move the business."
+      description="Collections that used to leak, intake that used to burn ops hours, labor models that used to require an office—and a portal that feels fast under load."
     >
       <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
         {impactStats.map((stat, i) => (

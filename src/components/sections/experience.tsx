@@ -8,8 +8,8 @@ export function Experience() {
     <Section
       id="experience"
       eyebrow="Experience"
-      title="Business outcomes first."
-      description="Selected accomplishments from shipping internal platforms and production systems at Right Angle Engineering—and building BidzBase."
+      title="Ownership with business leverage."
+      description="Primary owner of frontend and DevOps on a small eng team at Right Angle Engineering—plus shipping BidzBase as a production SaaS."
     >
       <div className="grid gap-3">
         {experience.map((item, i) => (
