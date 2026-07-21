@@ -55,11 +55,11 @@ export function Hero() {
           transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
           className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-zinc-400 sm:text-lg"
         >
-          I own frontend and deploy paths end-to-end—and ship products around
+          Full-stack engineer who ships frontend, backend, and infra—around
           real business workflows.
-          <br className="hidden sm:block" /> Payments that collect, integrations
-          that cut manual intake, tools that unlock remote labor, and production
-          SaaS people actually use.
+          <br className="hidden sm:block" /> Payment systems that collect,
+          integrations that cut manual work, and production SaaS people
+          actually use.
         </motion.p>
 
         <motion.div

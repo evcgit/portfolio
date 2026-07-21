@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Evan Cortez",
   title: "Evan Cortez — Software Engineer & Product Builder",
   description:
-    "Full-stack engineer who owns frontend and deploy paths end-to-end. Ships revenue systems, client integrations, and ops tooling—plus production SaaS around real business workflows.",
+    "Full-stack engineer who ships end-to-end—frontend, backend, and infrastructure. Builds payment systems, workflow automation, and production SaaS around real business operations.",
   url: "https://evancortez.me",
   email: "evanvcortez@gmail.com",
   github: "https://github.com/evcgit",
@@ -24,28 +24,28 @@ export const navItems = [
 
 export const impactStats = [
   {
-    value: "Charge-on-approval",
-    label: "Recovered revenue that previously leaked through unpaid invoices",
+    value: "Payments",
+    label: "Automated billing at workflow milestones—less unpaid AR, less chase",
   },
   {
     value: "~2×",
-    label: "Ops throughput on large-client intake after portal automation",
+    label: "Throughput on high-volume intake after portal automation",
   },
   {
     value: "~3×",
-    label: "Faster load on the heaviest job pages",
+    label: "Faster load on the heaviest production screens",
   },
   {
     value: "66%",
     label: "Fewer API requests through frontend architecture",
   },
   {
-    value: "Remote labor",
-    label: "PE stamping & packets unlocked for remote / overseas ops",
+    value: "Digitized",
+    label: "Document workflows that used to require in-office handoffs",
   },
   {
     value: "Zero-downtime",
-    label: "ECS deploy path replacing brittle one-box releases",
+    label: "Containerized deploy path replacing brittle one-box releases",
   },
 ] as const;
 
@@ -65,7 +65,7 @@ export const principles = [
   {
     title: "Technology should support business goals",
     description:
-      "Stack choices follow the outcome: cash collected, labor unlocked, reliability under load—not novelty for its own sake.",
+      "Stack choices follow the outcome: cash collected, hours saved, reliability under load—not novelty for its own sake.",
   },
   {
     title: "Prefer simple systems over unnecessary complexity",
@@ -96,46 +96,46 @@ export const principles = [
 
 export const experience = [
   {
-    title: "Turned approvals into collections",
+    title: "Tied billing to the workflow",
     result:
-      "Built Stripe charge-on-approval so jobs bill when work is approved—recovering revenue that previously leaked through unpaid invoices.",
+      "Built Stripe payment flows that charge when work is approved—so collections follow the job, not a spreadsheet chase.",
     detail:
-      "Card-on-file Autopay, settlement crons, and failed-payment alerts replaced spreadsheet chase.",
+      "Card-on-file Autopay, settlement jobs, and failed-payment alerts across the full payment lifecycle.",
   },
   {
-    title: "Automated large-client intake",
+    title: "Automated high-volume intake",
     result:
-      "Owned client-portal scrapers that create and update work through internal APIs—cutting intake ops time roughly in half.",
+      "Owned integrations that pull work from external portals into internal APIs—cutting intake ops time roughly in half.",
     detail:
-      "Same book of work at higher throughput without proportional headcount; grounded in prior PM experience on those workflows.",
+      "Higher throughput on the same book of work without proportional headcount; grounded in prior PM experience on those workflows.",
   },
   {
-    title: "Unlocked remote PE labor",
+    title: "Digitized document production",
     result:
-      "Solo-built in-app stamping, packet customization, and digital signing so PE deliverables no longer required an office wet-stamp bottleneck.",
+      "Solo-built in-app stamping, packet customization, and digital signing so deliverables no longer depended on physical office handoffs.",
     detail:
-      "Opened the door to remote and overseas ops labor on a high-frequency production path.",
+      "A high-frequency production path that works for distributed teams—not just people in the same building.",
   },
   {
     title: "Made commercial terms first-class",
     result:
-      "Led per-company pricing catalogs and custom bid tooling so sales could express real deals—not prices that only lived in people’s heads.",
+      "Led per-customer pricing catalogs and custom bid tooling so sales could express real deals in the system—not only in people’s heads.",
     detail:
-      "Estimate helpers and a standardized bid→accept flow for consistent quoting during an engineering-services pivot.",
+      "Estimate helpers and a standardized bid→accept flow for consistent quoting as the product expanded.",
   },
   {
     title: "Made the hottest screens fast",
     result:
-      "Cut API traffic by ~66% and made the heaviest job pages roughly 3× faster through request architecture, pagination, and serializer cleanup.",
+      "Cut API traffic by ~66% and made the heaviest screens roughly 3× faster through request architecture, pagination, and serializer cleanup.",
     detail:
-      "Normal jobs feel near-instant; operators spend time working, not waiting.",
+      "Day-to-day views feel near-instant; operators spend time working, not waiting.",
   },
   {
-    title: "Owned permissions and deploy reliability",
+    title: "Owned permissions and platform reliability",
     result:
-      "Solo permissions refactor across company, user, job, checklist, and accounting surfaces—plus sole ownership of the ECS/ALB migration path.",
+      "Solo permissions refactor across org, user, and job surfaces—plus owning the containerized ECS/ALB migration for safer deploys.",
     detail:
-      "Safe multi-role portal use as the org grew; zero-downtime deploys instead of brittle one-box releases.",
+      "Safe multi-role access as the product grew; zero-downtime path instead of brittle one-box releases.",
   },
   {
     title: "Raised quality control standards",
@@ -218,6 +218,7 @@ export const education = [
 
 export const bidzbaseCapabilities = [
   "Multi-tenant SaaS architecture",
+  "Responsive / mobile-friendly UI",
   "Stripe subscriptions",
   "Stripe Connect payments",
   "Scheduling",
@@ -240,7 +241,7 @@ export const bidzbaseSections = [
   {
     id: "solution",
     title: "The Solution",
-    body: "BidzBase is a production SaaS that follows the real workflow: estimate → send proposal → customer accept/decline → invoice → get paid. Scheduling, time tracking, and analytics sit on top of the same job data so the business runs from one system of record.",
+    body: "BidzBase is a production SaaS that follows the real workflow: estimate → send proposal → customer accept/decline → invoice → get paid. Scheduling, time tracking, and analytics sit on top of the same job data so the business runs from one system of record—on desktop or phone.",
   },
   {
     id: "customers",
@@ -255,17 +256,17 @@ export const bidzbaseSections = [
   {
     id: "architecture",
     title: "Architecture",
-    body: "Multi-tenant by organization. A Django API owns domain logic. React powers the operator experience. PostgreSQL, Redis, and S3 back the core. Stripe, SendGrid, and real-time channels connect the product to money, messaging, and live updates.",
+    body: "Multi-tenant by organization. A Django API owns domain logic. React powers the operator experience across breakpoints. PostgreSQL, Redis, and S3 back the core. Stripe, SendGrid, and real-time channels connect the product to money, messaging, and live updates.",
   },
   {
     id: "decisions",
     title: "Technical Decisions",
-    body: "Django for durable domain modeling and permissions. Stripe Billing for self-serve plans and Stripe Connect for customer payments. Docker on AWS for predictable deploys. Branded PDF generation so proposals look as serious as the work they represent.",
+    body: "Django for durable domain modeling and permissions. Stripe Billing for self-serve plans and Stripe Connect for customer payments. Docker on AWS for predictable deploys. Responsive UI so field use does not require a native app.",
   },
   {
     id: "lessons",
     title: "Lessons Learned",
-    body: "Shipping a usable core early beats polishing adjacent surfaces. Multi-tenant edge cases show up fast once real users arrive. Payments and permissions deserve more design time than almost anything else in the stack.",
+    body: "Shipping a usable core early beats polishing adjacent surfaces. Multi-tenant edge cases show up fast once real users arrive. Payments, permissions, and mobile ergonomics deserve more design time than almost anything else in the stack.",
   },
   {
     id: "roadmap",

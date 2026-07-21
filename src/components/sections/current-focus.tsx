@@ -16,7 +16,8 @@ export function CurrentFocus() {
               </h3>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-zinc-400 sm:text-base">
                 A live multi-tenant SaaS for subcontractors—estimates, proposals,
-                scheduling, time tracking, and payments in one workflow.
+                scheduling, time tracking, and payments in one workflow, built
+                to work on desktop and phone.
               </p>
             </div>
             <div className="flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 text-sm text-emerald-300">
