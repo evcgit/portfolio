@@ -112,7 +112,7 @@ export const experience = [
   {
     title: "Digitized document production",
     result:
-      "Solo-built in-app stamping, packet customization, and digital signing so deliverables no longer depended on physical office handoffs.",
+      "Solo-built in-app stamping and packet customization so deliverables no longer depended on physical office handoffs or third party software.",
     detail:
       "A high-frequency production path that works for distributed teams—not just people in the same building.",
   },
