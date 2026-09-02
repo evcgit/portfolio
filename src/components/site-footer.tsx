@@ -8,7 +8,7 @@ export function SiteFooter() {
           © {new Date().getFullYear()} {siteConfig.name}
         </p>
         <p className="text-zinc-600">
-          Built for clarity—products, systems, and outcomes.
+          Built for clarity—the work, the systems, the outcomes.
         </p>
       </div>
     </footer>

@@ -9,7 +9,6 @@ import { Experience } from "@/components/sections/experience";
 import { FeaturedProduct } from "@/components/sections/featured-product";
 import { Hero } from "@/components/sections/hero";
 import { Impact } from "@/components/sections/impact";
-import { LiveDemo } from "@/components/sections/live-demo";
 import { ProductThinking } from "@/components/sections/product-thinking";
 import { Technologies } from "@/components/sections/technologies";
 
@@ -25,13 +24,12 @@ export default function HomePage() {
       <SiteHeader />
       <main id="main">
         <Hero />
-        <Impact />
         <CurrentFocus />
-        <FeaturedProduct />
-        <LiveDemo />
-        <ProductThinking />
+        <Impact />
         <Experience />
+        <ProductThinking />
         <Technologies />
+        <FeaturedProduct />
         <Architecture />
         <Education />
         <Contact />

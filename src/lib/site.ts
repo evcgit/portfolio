@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Evan Cortez",
-  title: "Evan Cortez — Software Engineer & Product Builder",
+  title: "Evan Cortez — Software Engineer",
   description:
-    "Full-stack engineer who ships end-to-end—frontend, backend, and infrastructure. Builds payment systems, workflow automation, and production SaaS around real business operations.",
+    "Software engineer at Right Angle Engineering. Owns frontend and DevOps on a 3-person team, with heavy backend influence. Builds billing systems, financial dashboards, and production tools around real operations.",
   url: "https://evancortez.me",
   email: "evanvcortez@gmail.com",
   github: "https://github.com/evcgit",
@@ -17,15 +17,23 @@ export const siteConfig = {
 export const navItems = [
   { label: "About", href: "#about" },
   { label: "Impact", href: "#impact" },
-  { label: "BidzBase", href: "#bidzbase" },
   { label: "Experience", href: "#experience" },
+  { label: "Work", href: "#work" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
 export const impactStats = [
   {
-    value: "Payments",
-    label: "Automated billing at workflow milestones—less unpaid AR, less chase",
+    value: "~70%",
+    label: "Company MRR now running through the bidding and invoicing system I built—and growing",
+  },
+  {
+    value: "Billing",
+    label: "Per-company billing cycles so commercial terms live in software, not spreadsheets",
+  },
+  {
+    value: "Dashboards",
+    label: "Analytics used for company financial analysis—MRR, collections, commercial performance",
   },
   {
     value: "~2×",
@@ -36,24 +44,28 @@ export const impactStats = [
     label: "Faster load on the heaviest production screens",
   },
   {
-    value: "66%",
-    label: "Fewer API requests through frontend architecture",
-  },
-  {
-    value: "Digitized",
-    label: "Document workflows that used to require in-office handoffs",
-  },
-  {
     value: "Zero-downtime",
-    label: "Containerized deploy path replacing brittle one-box releases",
+    label: "Containerized ECS/ALB deploy path I own, replacing brittle one-box releases",
   },
 ] as const;
 
-export const focusBadges = [
-  "Production",
-  "Real Users",
-  "Recruiter Demo Available",
-  "Actively Shipping",
+export const focusAreas = [
+  {
+    kicker: "Right Angle Engineering",
+    title: "Frontend and DevOps, owned.",
+    body: "Three-person engineering team: me, a remote engineer, and a CTO mostly in meetings. I own the production frontend and the DevOps path, with heavy influence on the backend. Day to day that means billing, operator UI, CI/CD, and the systems people actually run the company on.",
+    status: "Shipping in production",
+    href: "#experience",
+    hrefLabel: "See what I shipped",
+  },
+  {
+    kicker: "In development",
+    title: "Architectural drafts → 3D.",
+    body: "Building a Three.js tool that turns architectural drafts into 3D models, runs structural analysis on the drawings, then outputs structural drafts. Encoding a drawing QC workflow into software instead of another handoff.",
+    status: "Building now",
+    href: "#experience",
+    hrefLabel: "How it fits the work",
+  },
 ] as const;
 
 export const principles = [
@@ -96,11 +108,25 @@ export const principles = [
 
 export const experience = [
   {
-    title: "Tied billing to the workflow",
+    title: "Built the billing system the company runs on",
+    result:
+      "Designed and shipped the custom bidding and invoicing platform that now accounts for ~70% of company MRR—and growing—including per-company billing cycles so each customer can run on its own commercial calendar.",
+    detail:
+      "Pricing catalogs, bid→invoice APIs and UI, and commercial terms that used to live in people’s heads.",
+  },
+  {
+    title: "Tied collections to the work",
     result:
       "Built Stripe payment flows that charge when work is approved—so collections follow the job, not a spreadsheet chase.",
     detail:
       "Card-on-file Autopay, settlement jobs, and failed-payment alerts across the full payment lifecycle.",
+  },
+  {
+    title: "Made the numbers visible",
+    result:
+      "Built analytics dashboards used for company financial analysis—MRR, collections, and commercial performance—so leadership can see the business without exporting to a spreadsheet.",
+    detail:
+      "Operators and finance looking at the same system of record.",
   },
   {
     title: "Automated high-volume intake",
@@ -110,18 +136,11 @@ export const experience = [
       "Higher throughput on the same book of work without proportional headcount; grounded in prior PM experience on those workflows.",
   },
   {
-    title: "Digitized document production",
+    title: "Encoding drawing QC in 3D",
     result:
-      "Solo-built in-app stamping and packet customization so deliverables no longer depended on physical office handoffs or third party software.",
+      "Building a Three.js tool that converts architectural drafts into 3D models for structural analysis, then outputs structural drafts.",
     detail:
-      "A high-frequency production path that works for distributed teams—not just people in the same building.",
-  },
-  {
-    title: "Made commercial terms first-class",
-    result:
-      "Led per-customer pricing catalogs and custom bid tooling so sales could express real deals in the system—not only in people’s heads.",
-    detail:
-      "Estimate helpers and a standardized bid→accept flow for consistent quoting as the product expanded.",
+      "In development—turning a specialist handoff into a software workflow.",
   },
   {
     title: "Made the hottest screens fast",
@@ -131,29 +150,29 @@ export const experience = [
       "Day-to-day views feel near-instant; operators spend time working, not waiting.",
   },
   {
-    title: "Owned permissions and platform reliability",
+    title: "Owned the deploy path",
     result:
-      "Solo permissions refactor across org, user, and job surfaces—plus owning the containerized ECS/ALB migration for safer deploys.",
+      "I own DevOps on a 3-person team: containerized ECS/ALB migration, GitHub Actions CI/CD, and production tests in Jest and PyTest.",
     detail:
-      "Safe multi-role access as the product grew; zero-downtime path instead of brittle one-box releases.",
+      "Zero-downtime deploys instead of brittle one-box releases. Mentored a software intern as the day-to-day technical contact.",
   },
   {
-    title: "Raised quality control standards",
+    title: "Digitized document production",
     result:
-      "Built configurable checklist and QC flows that made review consistent across jobs and handoffs.",
+      "Solo-built in-app stamping and packet customization so deliverables no longer depended on physical office handoffs or third party software.",
     detail:
-      "Fewer bad billable states before approval; clearer signal for operators and managers.",
+      "A high-frequency production path that works for distributed teams—not just people in the same building.",
   },
 ] as const;
 
 export const technologies = {
-  Frontend: ["React", "TypeScript", "Next.js", "React Query", "MUI", "CSS"],
+  Frontend: ["React", "TypeScript", "Next.js", "React Query", "Three.js", "MUI", "CSS"],
   Backend: ["Python", "Django", "Django REST Framework", "Dramatiq", "Node.js"],
-  Integrations: ["Puppeteer", "Stripe webhooks", "S3 uploads"],
+  Integrations: ["Puppeteer", "Stripe webhooks", "S3 uploads", "GraphQL (Linear)"],
   Cloud: ["AWS", "ECS", "ALB", "EFS", "S3", "Secrets Manager"],
   Infrastructure: ["Docker", "AWS CDK", "Nginx"],
   Databases: ["PostgreSQL", "MySQL", "Redis"],
-  DevOps: ["GitHub Actions", "Docker Compose", "CI/CD", "Release notes"],
+  DevOps: ["GitHub Actions", "Docker Compose", "CI/CD", "Jest", "PyTest"],
   Payments: ["Stripe Billing", "Stripe Connect", "PaymentIntents", "Autopay"],
 } as const;
 
@@ -206,13 +225,13 @@ export const architectureIntegrations = [
 export const education = [
   {
     school: "Mountainland Technical College",
-    program: "Web Development",
-    detail: "Completed 2024",
+    program: "Web Development Certificate",
+    detail: "Completed 2024 · JavaScript, React, Node.js, REST APIs",
   },
   {
     school: "Utah Valley University",
     program: "Information Systems",
-    detail: "Currently pursuing coursework",
+    detail: "Coursework toward B.S. · ~3 semesters remaining",
   },
 ] as const;
 
@@ -244,33 +263,13 @@ export const bidzbaseSections = [
     body: "BidzBase is a production SaaS that follows the real workflow: estimate → send proposal → customer accept/decline → invoice → get paid. Scheduling, time tracking, and analytics sit on top of the same job data so the business runs from one system of record—on desktop or phone.",
   },
   {
-    id: "customers",
-    title: "Target Customers",
-    body: "Independent subcontractors and small trade shops that need professional proposals, clear job status, and faster collections—without enterprise software overhead.",
-  },
-  {
-    id: "philosophy",
-    title: "Product Philosophy",
-    body: "Solve contractor workflows first. Keep the product focused on estimates, proposals, payments, scheduling, and accountability. No feature for its own sake—especially not AI bolted on without a clear operational job to do.",
-  },
-  {
     id: "architecture",
     title: "Architecture",
     body: "Multi-tenant by organization. A Django API owns domain logic. React powers the operator experience across breakpoints. PostgreSQL, Redis, and S3 back the core. Stripe, SendGrid, and real-time channels connect the product to money, messaging, and live updates.",
   },
   {
-    id: "decisions",
-    title: "Technical Decisions",
-    body: "Django for durable domain modeling and permissions. Stripe Billing for self-serve plans and Stripe Connect for customer payments. Docker on AWS for predictable deploys. Responsive UI so field use does not require a native app.",
-  },
-  {
     id: "lessons",
-    title: "Lessons Learned",
-    body: "Shipping a usable core early beats polishing adjacent surfaces. Multi-tenant edge cases show up fast once real users arrive. Payments, permissions, and mobile ergonomics deserve more design time than almost anything else in the stack.",
-  },
-  {
-    id: "roadmap",
-    title: "Roadmap",
-    body: "Deepen the operations layer for growing crews, tighten analytics around cash and throughput, and keep expanding the parts of the workflow that still live in inboxes and spreadsheets.",
+    title: "What I learned shipping it",
+    body: "A usable core in a month beats polishing adjacent surfaces. Multi-tenant edge cases show up fast once real users arrive. Payments, permissions, and mobile ergonomics deserve more design time than almost anything else in the stack.",
   },
 ] as const;

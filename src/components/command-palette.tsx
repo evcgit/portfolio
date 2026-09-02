@@ -112,13 +112,13 @@ export function CommandPalette() {
     {
       id: "bidzbase",
       label: "BidzBase",
-      hint: "Product",
+      hint: "Side product",
       icon: Briefcase,
-      run: () => openExternal(siteConfig.bidzbase),
+      run: () => go("#work"),
     },
     {
       id: "demo",
-      label: "Live Demo",
+      label: "BidzBase demo",
       hint: "No account needed",
       icon: ExternalLink,
       run: () => openExternal(siteConfig.demo),

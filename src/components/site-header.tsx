@@ -92,12 +92,11 @@ export function SiteHeader() {
             </kbd>
           </button>
           <a
-            href={siteConfig.demo}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={siteConfig.resume}
+            download
             className="rounded-md bg-zinc-100 px-3 py-1.5 text-[13px] font-medium text-zinc-950 transition-colors hover:bg-white"
           >
-            Live Demo
+            Resume
           </a>
         </div>
       </div>

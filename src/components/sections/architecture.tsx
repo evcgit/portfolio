@@ -17,9 +17,9 @@ export function Architecture() {
 
   return (
     <Section
-      eyebrow="Architecture"
+      eyebrow="BidzBase architecture"
       title="A simple system with clear seams."
-      description="Hover each layer to see why it was chosen. The diagram mirrors how BidzBase is wired in production."
+      description="How BidzBase is wired in production. Hover each layer to see why it was chosen."
     >
       <div className="grid gap-8 lg:grid-cols-[1fr_280px]">
         <FadeIn>

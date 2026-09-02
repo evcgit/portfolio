@@ -27,10 +27,11 @@ export const metadata: Metadata = {
   keywords: [
     "Evan Cortez",
     "Software Engineer",
-    "Product Builder",
-    "BidzBase",
-    "SaaS",
+    "Right Angle Engineering",
     "Full Stack Engineer",
+    "React",
+    "AWS",
+    "Stripe",
     "Utah",
   ],
   openGraph: {

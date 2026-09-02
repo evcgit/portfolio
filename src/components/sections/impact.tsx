@@ -9,7 +9,7 @@ export function Impact() {
       id="impact"
       eyebrow="Impact"
       title="Outcomes that transfer."
-      description="Payment automation, intake throughput, document workflows, performance, and deploy reliability—framed for the next team, not just the last one."
+      description="Revenue systems, financial visibility, intake throughput, performance, and deploy reliability—from Right Angle Engineering, framed for the next team."
     >
       <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
         {impactStats.map((stat, i) => (

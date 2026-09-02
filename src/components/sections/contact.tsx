@@ -40,7 +40,7 @@ export function Contact() {
       id="contact"
       eyebrow="Contact"
       title="Let's talk about the work."
-      description="Open to conversations about product engineering roles where ownership, shipping, and business impact matter."
+      description="Open to conversations about engineering roles where ownership, shipping, and business impact matter."
     >
       <div className="grid gap-3 sm:grid-cols-2">
         {links.map((link, i) => (

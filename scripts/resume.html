@@ -18,9 +18,9 @@
       body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #18181b;
-        font-size: 9.4pt;
-        line-height: 1.32;
-        padding: 0.48in 0.58in;
+        font-size: 9.25pt;
+        line-height: 1.3;
+        padding: 0.46in 0.56in;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
@@ -34,7 +34,7 @@
 
       .subtitle {
         margin-top: 2px;
-        font-size: 9.75pt;
+        font-size: 9.6pt;
         color: #3f3f46;
         font-weight: 500;
       }
@@ -56,7 +56,7 @@
       }
 
       section {
-        margin-top: 11px;
+        margin-top: 10px;
       }
 
       h2 {
@@ -72,8 +72,8 @@
 
       .summary {
         color: #27272a;
-        font-size: 9.15pt;
-        line-height: 1.38;
+        font-size: 9.1pt;
+        line-height: 1.36;
       }
 
       .role-head {
@@ -85,7 +85,7 @@
 
       .role-title {
         font-weight: 650;
-        font-size: 9.75pt;
+        font-size: 9.6pt;
       }
 
       .role-meta {
@@ -96,7 +96,7 @@
 
       .role-org {
         margin-top: 1px;
-        font-size: 8.75pt;
+        font-size: 8.6pt;
         color: #3f3f46;
       }
 
@@ -107,7 +107,7 @@
 
       .stack {
         margin-top: 1px;
-        font-size: 7.75pt;
+        font-size: 7.7pt;
         color: #71717a;
       }
 
@@ -117,7 +117,7 @@
       }
 
       li {
-        margin-bottom: 1.5px;
+        margin-bottom: 1.4px;
       }
 
       li::marker {
@@ -125,14 +125,14 @@
       }
 
       .job + .job {
-        margin-top: 8px;
+        margin-top: 7px;
       }
 
       .skills {
         display: grid;
-        grid-template-columns: 78px 1fr;
+        grid-template-columns: 88px 1fr;
         gap: 1.5px 8px;
-        font-size: 8.75pt;
+        font-size: 8.6pt;
       }
 
       .skills dt {
@@ -149,7 +149,7 @@
         justify-content: space-between;
         gap: 12px;
         margin-bottom: 2px;
-        font-size: 8.75pt;
+        font-size: 8.6pt;
       }
 
       .edu-row strong {
@@ -166,7 +166,9 @@
   <body>
     <header>
       <h1>Evan Cortez</h1>
-      <p class="subtitle">Full-Stack Engineer · Product Builder</p>
+      <p class="subtitle">
+        Software Engineer · Owns frontend &amp; DevOps · Billing systems · AWS
+      </p>
       <p class="contact">
         Provo, UT
         <span class="sep">·</span>
@@ -187,12 +189,94 @@
     <section>
       <h2>Summary</h2>
       <p class="summary">
-        Full-stack engineer who ships across frontend, backend, and
-        infrastructure on a small eng team. Builds payment systems, workflow
-        automation, and ops tooling—plus production SaaS with multi-tenant
-        architecture and payments. Measures success in cash collected, hours
-        saved, and systems people rely on every day.
+        Software engineer on a 3-person team at Right Angle Engineering—I own
+        the frontend and DevOps, with heavy influence on the backend. Last 12
+        months: a custom bidding and invoicing system that now runs ~70% of
+        company MRR (and growing), per-company billing cycles, Stripe
+        collections, financial analytics dashboards, and a Three.js tool that
+        turns architectural drafts into 3D models for structural analysis.
+        Measures success in cash collected, hours saved, and systems people
+        rely on every day.
       </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="role-head">
+          <div class="role-title">Full-Stack Software Engineer</div>
+          <div class="role-meta">Jul 2024 – Present</div>
+        </div>
+        <div class="role-org">
+          Right Angle Engineering · 3-person eng team · owns frontend and
+          DevOps; heavy backend influence
+        </div>
+        <div class="stack">
+          React · TypeScript · React Query · Python / Django REST · MySQL ·
+          Stripe · Three.js · AWS CDK · ECS · ALB · S3 · Docker · GitHub Actions
+          · Jest · PyTest
+        </div>
+        <ul>
+          <li>
+            Designed and shipped the custom bidding and invoicing system that
+            now accounts for ~70% of company MRR (and growing)—per-customer
+            pricing catalogs, bid→invoice APIs/UI, and custom billing cycles so
+            each company can run on its own commercial calendar
+          </li>
+          <li>
+            Built Stripe payment flows (PaymentIntents, Autopay, settlement
+            jobs, failed-payment alerts) so collections follow work approval,
+            not a spreadsheet chase
+          </li>
+          <li>
+            Built analytics dashboards used for company financial analysis—MRR,
+            collections, and commercial performance
+          </li>
+          <li>
+            Owned portal-to-API intake integrations that cut ops time ~50%; cut
+            API traffic ~66% and made the heaviest screens ~3× faster
+          </li>
+          <li>
+            Building a Three.js tool that converts architectural drafts into 3D
+            models for structural analysis, then outputs structural drafts
+          </li>
+          <li>
+            Own DevOps: Docker, ECS/ALB zero-downtime deploys, GitHub Actions,
+            production tests in Jest and PyTest; primary day-to-day technical
+            mentor for a software intern
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="role-head">
+          <div class="role-title">Project Manager → Software Engineer</div>
+          <div class="role-meta">Feb 2024 – Jul 2024</div>
+        </div>
+        <div class="role-org">Right Angle Engineering</div>
+        <ul>
+          <li>
+            Coordinated high-volume client intake; promoted after independently
+            shipping internal full-stack tools that removed the bottlenecks
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="role-head">
+          <div class="role-title">Market Manager</div>
+          <div class="role-meta">Jun 2022 – Oct 2023</div>
+        </div>
+        <div class="role-org">Solcius · Residential solar operations</div>
+        <ul>
+          <li>
+            Led a 10-person operations team through 200+ installations;
+            improved internal processes ~30%—the workflow intuition behind later
+            engineering work
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section>
@@ -208,106 +292,13 @@
         </div>
         <div class="stack">
           React · Django · PostgreSQL · Redis · Stripe Billing + Connect ·
-          SendGrid · Docker · AWS
+          Docker · AWS
         </div>
         <ul>
           <li>
-            Built and launched a live SaaS covering estimate → proposal →
-            accept/decline → invoice → get paid, plus scheduling, time tracking,
-            analytics, roles, PDFs, and email automation—responsive for desktop
-            and phone
-          </li>
-          <li>
-            Shipped from initial idea to production with real users in roughly
-            one month; continues iterating from live usage
-          </li>
-          <li>
-            Designed multi-tenant architecture with Stripe subscriptions, Stripe
-            Connect, Docker deployment, and AWS infrastructure
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-
-      <div class="job">
-        <div class="role-head">
-          <div class="role-title">Full-Stack Software Engineer</div>
-          <div class="role-meta">Jul 2024 – Present</div>
-        </div>
-        <div class="role-org">
-          Right Angle Engineering · End-to-end ownership across React, Django,
-          and AWS
-        </div>
-        <div class="stack">
-          React · TypeScript · React Query · Django · MySQL · Stripe · Puppeteer
-          · AWS CDK · ECS · Docker
-        </div>
-        <ul>
-          <li>
-            Built Stripe payment flows that charge when work is approved—tying
-            billing to the workflow with Autopay, settlement jobs, and
-            failed-payment alerts
-          </li>
-          <li>
-            Owned backend + integration work that pulls jobs from external
-            portals into internal APIs, cutting intake ops time roughly in half
-            and raising throughput without proportional headcount
-          </li>
-          <li>
-            Solo-built in-app stamping and packet customization so deliverables
-            no longer depended on physical office handoffs or third party
-            software
-          </li>
-          <li>
-            Led per-customer pricing catalogs and custom bid APIs/UI so sales
-            could express real commercial terms in the system
-          </li>
-          <li>
-            Cut API traffic ~66% and made the heaviest screens ~3× faster via
-            request architecture, pagination, and serializer cleanup
-          </li>
-          <li>
-            Solo permissions refactor across org, user, and job surfaces; owned
-            ECS/ALB migration for zero-downtime deploys
-          </li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="role-head">
-          <div class="role-title">Project Manager → Software Engineer</div>
-          <div class="role-meta">Feb 2024 – Jul 2024</div>
-        </div>
-        <div class="role-org">Right Angle Engineering</div>
-        <ul>
-          <li>
-            Promoted into engineering after independently building internal
-            full-stack tools that improved team workflows
-          </li>
-          <li>
-            Coordinated planning-to-delivery on high-volume client intake;
-            later automation work grounded in doing the job firsthand
-          </li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="role-head">
-          <div class="role-title">Market Manager</div>
-          <div class="role-meta">Jun 2022 – Oct 2023</div>
-        </div>
-        <div class="role-org">Solcius</div>
-        <ul>
-          <li>
-            Managed 200+ residential solar installations; led a 10-person
-            operations team through compliance, delivery, and client outcomes
-          </li>
-          <li>
-            Improved internal processes by ~30%, grounding later engineering
-            work in real operational constraints
+            Shipped estimate → proposal → accept/decline → invoice → get paid,
+            plus scheduling, time tracking, analytics, roles, and email—desktop
+            and phone—from idea to real users in ~1 month
           </li>
         </ul>
       </div>
@@ -317,22 +308,17 @@
       <h2>Skills</h2>
       <dl class="skills">
         <dt>Frontend</dt>
-        <dd>React, TypeScript, Next.js, React Query, MUI, CSS</dd>
+        <dd>React, TypeScript, Next.js, React Query, Three.js, MUI, CSS, HTML</dd>
         <dt>Backend</dt>
-        <dd>Python, Django, Django REST Framework, Dramatiq, Node.js</dd>
+        <dd>Python, Django REST Framework, Node.js, REST APIs, Git, Jest, PyTest</dd>
         <dt>Data</dt>
         <dd>PostgreSQL, MySQL, Redis</dd>
-        <dt>Cloud / Infra</dt>
-        <dd>AWS (ECS, ALB, EFS, S3), Docker, AWS CDK, Nginx, GitHub Actions</dd>
+        <dt>Cloud / DevOps</dt>
+        <dd>AWS (ECS, ALB, S3, Secrets Manager, CDK), Docker, Nginx, GitHub Actions CI/CD</dd>
         <dt>Payments</dt>
-        <dd>Stripe Billing, Connect, PaymentIntents, Autopay / webhooks</dd>
-        <dt>Integrations</dt>
-        <dd>Puppeteer scrapers, S3 uploads, client-portal automation</dd>
-        <dt>AI Tooling</dt>
-        <dd>
-          Cursor, Claude, ChatGPT — used across architecture, implementation,
-          debugging, and review
-        </dd>
+        <dd>Stripe Billing, Connect, PaymentIntents, Autopay, invoicing, custom billing cycles</dd>
+        <dt>Also</dt>
+        <dd>Puppeteer, S3 uploads, GraphQL (Linear automation), Cursor / Claude / ChatGPT</dd>
       </dl>
     </section>
 
@@ -347,10 +333,10 @@
       </div>
       <div class="edu-row">
         <div>
-          <strong>Utah Valley University</strong> — Information Systems
-          coursework
+          <strong>Utah Valley University</strong> — B.S. Information Systems
+          (coursework; ~3 semesters remaining)
         </div>
-        <span>In progress</span>
+        <span>Coursework</span>
       </div>
     </section>
   </body>
