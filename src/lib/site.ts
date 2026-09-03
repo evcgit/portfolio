@@ -53,18 +53,18 @@ export const focusAreas = [
   {
     kicker: "Right Angle Engineering",
     title: "Frontend and DevOps, owned.",
-    body: "Three-person engineering team: me, a remote engineer, and a CTO mostly in meetings. I own the production frontend and the DevOps path, with heavy influence on the backend. Day to day that means billing, operator UI, CI/CD, and the systems people actually run the company on.",
+    body: "I own the production frontend and the DevOps path, with heavy influence on the backend. Day to day that means billing, operator UI, CI/CD, and the systems people actually run the company on.",
     status: "Shipping in production",
     href: "#experience",
     hrefLabel: "See what I shipped",
   },
   {
-    kicker: "In development",
-    title: "Architectural drafts → 3D.",
-    body: "Building a Three.js tool that turns architectural drafts into 3D models, runs structural analysis on the drawings, then outputs structural drafts. Encoding a drawing QC workflow into software instead of another handoff.",
-    status: "Building now",
-    href: "#experience",
-    hrefLabel: "How it fits the work",
+    kicker: "Right Angle Engineering",
+    title: "Billing the company runs on.",
+    body: "Custom bidding and invoicing that now accounts for ~70% of company MRR, per-company billing cycles, Stripe collections, and dashboards so leadership can see the numbers without exporting to a spreadsheet.",
+    status: "Shipping in production",
+    href: "#impact",
+    hrefLabel: "See the numbers",
   },
 ] as const;
 
@@ -134,13 +134,6 @@ export const experience = [
       "Owned integrations that pull work from external portals into internal APIs—cutting intake ops time roughly in half.",
     detail:
       "Higher throughput on the same book of work without proportional headcount; grounded in prior PM experience on those workflows.",
-  },
-  {
-    title: "Encoding drawing QC in 3D",
-    result:
-      "Building a Three.js tool that converts architectural drafts into 3D models for structural analysis, then outputs structural drafts.",
-    detail:
-      "In development—turning a specialist handoff into a software workflow.",
   },
   {
     title: "Made the hottest screens fast",

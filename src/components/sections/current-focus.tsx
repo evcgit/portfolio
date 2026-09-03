@@ -9,7 +9,7 @@ export function CurrentFocus() {
       id="about"
       eyebrow="About"
       title="What I actually own."
-      description="Not a feature list. The parts of the system I am accountable for—and what I am building next."
+      description="Not a feature list. The parts of the system I am accountable for."
       className="pt-8 sm:pt-12"
     >
       <div className="grid gap-3 lg:grid-cols-2">
